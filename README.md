@@ -1,5 +1,5 @@
 # TF-IDF-Blocking
-This project attempts to help reaching the starting point of the BSc Proposal
+This project attempts to help reaching the starting point of the BSc Thesis
 "Score-Distribution-Based Adaptive Thresholding for TF/IDF Blocking in Sparkly" 
 by Afrasiyab Khalili and Prof. Dr. Ziawasch Abedjan at the group D2IP, TU Berlin.
 
@@ -11,5 +11,6 @@ and progressive top-k expansion based on some example results obtained from the 
 
 ## Dataset
 Structured dataset Amazon–Google_1 (https://github.com/anhaidgroup/sparkly) from
-the paper "Deep Learning for Entity Matching: A Design Space Exploration" by Mudgal et al.
+the paper "Sparkly: A Simple yet Surprisingly Strong TF/IDF Blocker for
+Entity Matching" by Derek Paulsen, Yash Govind and AnHai Doan.
 
