@@ -861,6 +861,12 @@ wheels = [
 ]
 
 [[package]]
+name = "pylru"
+version = "1.0.9"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c0/7d/0de1055632f3871dfeaabe5a3f0510317cd98b93e7b792b44e4c7de2b17b/pylru-1.0.9.tar.gz", hash = "sha256:71376192671f0ad1690b2a7427d39a29b1df994c8469a9b46b03ed7e28c0172c", size = 15461, upload-time = "2015-03-24T18:23:45.423Z" }
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -891,6 +897,16 @@ wheels = [
 ]
 
 [[package]]
+name = "sparkly"
+version = "2.8.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pylru" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fd/8b/3a8e8390ce158be3f2a7b0e6fa7fcb6f6db837e6fe687e1181102196b7db/sparkly-2.8.2.tar.gz", hash = "sha256:6b20381e01718dc2a783e67ec1d392ad6caa2437f028f12bbf97823c653eb948", size = 33665, upload-time = "2020-06-12T10:22:02.915Z" }
+
+[[package]]
 name = "tf-idf-blocking"
 version = "0.1.0"
 source = { virtual = "." }
@@ -900,6 +916,7 @@ dependencies = [
     { name = "pandas", version = "3.0.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "pyarrow", version = "25.0.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "pyarrow", version = "26.0.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "sparkly" },
 ]
 
 [package.metadata]
@@ -907,6 +924,7 @@ requires-dist = [
     { name = "fastparquet", specifier = ">=2026.9.0" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pyarrow", specifier = ">=25.0.1" },
+    { name = "sparkly", specifier = ">=2.8.2" },
 ]
 
 [[package]]
